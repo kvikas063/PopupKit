@@ -27,6 +27,9 @@ public class Popup: UIView {
     /// Popup dismiss button
     private let dismissButton = UIButton()
     
+    /// Popup Dismiss Completion Handler
+    private var dismissTapped: () -> Void
+
     // MARK: - Popup Height Constraints
     private var heightConstraint: NSLayoutConstraint!
     
@@ -50,8 +53,10 @@ public class Popup: UIView {
     public init(
         with title: String,
         message: String,
-        dismissTitle: String? = nil
+        dismissTitle: String? = nil,
+        dismissTapped: @escaping () -> Void
     ) {
+        self.dismissTapped = dismissTapped
         super.init(frame: .zero)
         
         setupViews()
@@ -102,7 +107,7 @@ private extension Popup {
             attributes: [.font : subTitleLabel.font as Any],
             context: nil)
         height += rect.height
-        heightConstraint.constant = min(height, ScreenBounds.height * 0.6)
+        heightConstraint.constant = min(max(height, 180), ScreenBounds.height * 0.6)
         
         // Animate Popup View for better UX
         containerView.isHidden = false
@@ -123,6 +128,7 @@ private extension Popup {
         } completion: { _ in
             if !isShowing {
                 self.removeFromSuperview()
+                self.dismissTapped()
             }
         }
     }
