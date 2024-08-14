@@ -9,7 +9,7 @@ import UIKit
 
 /// Popup View class used to show alert type view
 /// - This class is used to show alert type of view to highlight some info
-public class Popup: UIView {
+public final class Popup: UIView {
 
     // MARK: - UI Properties
     /// Popup container view

@@ -13,6 +13,7 @@
 		096AC6922BA093C900D931EE /* PopupKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 096AC6842BA093C900D931EE /* PopupKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		096AC69D2BA0948200D931EE /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096AC69C2BA0948200D931EE /* Popup.swift */; };
 		09B9955E2BA5A3EC00E8CD55 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9955D2BA5A3EC00E8CD55 /* Extension.swift */; };
+		09DA82A22BB55F24002448A0 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DA82A12BB55F24002448A0 /* PopupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		096AC6902BA093C900D931EE /* PopupKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupKitTests.swift; sourceTree = "<group>"; };
 		096AC69C2BA0948200D931EE /* Popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
 		09B9955D2BA5A3EC00E8CD55 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		09DA82A12BB55F24002448A0 /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			children = (
 				096AC69C2BA0948200D931EE /* Popup.swift */,
 				09B9955D2BA5A3EC00E8CD55 /* Extension.swift */,
+				09DA82A12BB55F24002448A0 /* PopupView.swift */,
 			);
 			path = SourceCode;
 			sourceTree = "<group>";
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09B9955E2BA5A3EC00E8CD55 /* Extension.swift in Sources */,
+				09DA82A22BB55F24002448A0 /* PopupView.swift in Sources */,
 				096AC69D2BA0948200D931EE /* Popup.swift in Sources */,
 				096AC6862BA093C900D931EE /* PopupKit.docc in Sources */,
 			);

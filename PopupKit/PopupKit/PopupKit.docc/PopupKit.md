@@ -17,6 +17,18 @@ addSubview(popup)
 
 ```
 
+```swiftui
+import PopupKit
+
+PopupView(with: "Popup Title", 
+                  message: "Popup Message", 
+                  dismissTitle: "Dismiss Button Title") {
+    // Do something
+}
+
+
+```
+
 > Note: Keep **Popup Title** in one line only.
 
 ## Topics
@@ -24,3 +36,4 @@ addSubview(popup)
 ### Files
 
 - ``Popup``
+- ``PopupView``
